@@ -271,12 +271,13 @@
         }
     },
     "compileService": {
-        "yottaTarget": "bbc-microbit-classic-gcc@https://github.com/lancaster-university/yotta-target-bbc-microbit-classic-gcc",
-        "yottaCorePackage": "microbit",
-        "githubCorePackage": "lancaster-university/microbit",
-        "gittag": "v2.2.0-rc6",
-        "serviceId": "microbit",
-        "dockerImage": "pext/yotta:gcc5"
+        "buildEngine": "codal",
+        "githubCorePackage": "lancaster-university/codal",
+        "gittag": "v0.8.0",
+        "dockerImage": "pext/yotta:latest",
+        "codalTarget": {
+            "branches": {}
+        }
     },
     "variants": {
         "stm32f401": {
